@@ -9,7 +9,6 @@ import Profile from "./Profile/Profile";
 import UpdateProfile from "./Profile/UpdateProfile";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Landing from "./LandingPage/Landing";
 
 import {

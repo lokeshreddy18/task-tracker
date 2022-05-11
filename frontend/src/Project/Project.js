@@ -4,7 +4,7 @@ import Task from "./Task";
 import "./Project.css";
 import { Redirect, useParams, Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import Loader from "react-loader-spinner";
+
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 
@@ -183,14 +183,6 @@ const Project = (props) => {
 
             <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
               <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom ">
-                {isDataLoading && (
-                  <Loader
-                    type="Puff"
-                    color="#005252"
-                    height={100}
-                    width={100}
-                  />
-                )}
                 <div className="row w-100">
                   <div className="col-10">
                     <h1 className="h2 projTitle">
@@ -260,14 +252,7 @@ const Project = (props) => {
                       </button>
                     )}
 
-                    {isDataLoading && (
-                      <Loader
-                        type="Puff"
-                        color="#005252"
-                        height={100}
-                        width={100}
-                      />
-                    )}
+                 
                     {tasksData.length ? (
                       tasksData
                         .filter((task) => {
@@ -290,14 +275,7 @@ const Project = (props) => {
                 <div className=" col-4">
                   <div className="me-3 shadow-lg border rounded-3 container taskContainer">
                     <h2 className="mt-2"> In-Progress</h2>
-                    {isDataLoading && (
-                      <Loader
-                        type="Puff"
-                        color="#005252"
-                        height={100}
-                        width={100}
-                      />
-                    )}
+                  
                     {tasksData
                       .filter((task) => {
                         return task.taskState === "inprogress";
@@ -316,14 +294,7 @@ const Project = (props) => {
                 <div className=" col-4">
                   <div className="me-3 shadow-lg border rounded-3 container taskContainer">
                     <h2 className="mt-2">Done</h2>
-                    {isDataLoading && (
-                      <Loader
-                        type="Puff"
-                        color="#005252"
-                        height={100}
-                        width={100}
-                      />
-                    )}
+                    
                     {tasksData
                       .filter((task) => {
                         return task.taskState === "done";

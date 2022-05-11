@@ -3,7 +3,7 @@ import ProjectCard from "../Dashboard/ProjectCard";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Redirect } from "react-router-dom";
-import Loader from "react-loader-spinner";
+
 import Pagination from "@material-ui/lab/Pagination";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
@@ -160,14 +160,7 @@ function SearchResultsPage(props) {
                 <h1 className="h2">Search Results: {query}</h1>
               </div>
               <div className="row row-cols-1 row-cols-md-2 g-4">
-                {isDataLoading && (
-                  <Loader
-                    type="Puff"
-                    color="#005252"
-                    height={500}
-                    width={500}
-                  />
-                )}
+            
                 {userProjects.map((project) => {
                   return (
                     <Link
