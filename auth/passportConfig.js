@@ -18,6 +18,7 @@ const verifyCallback = async (username, password, done) => {
     user.hash,
     user.salt
   );
+  //this is a comment
 
   if (isValid) {
     return done(null, user);
