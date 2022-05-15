@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import { Redirect, Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import NavLogo from "../Images/NavLogo.png";
+
 
 function NavbarWSearch(props) {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -31,13 +31,7 @@ function NavbarWSearch(props) {
     return (
       <header className="navbar navbar-light sticky-top nav-bg flex-md-nowrap p-0 shadow">
         <Link className="col-md-3 col-lg-2 me-0 px-3 optask-brand-text" to="/">
-          <img
-            src={NavLogo}
-            alt="OpTask Logo"
-            className="me-1"
-            style={{ width: "35px", height: "35px" }}
-          />
-          OpTask
+          TaskTracker
         </Link>
         <button
           className="navbar-toggler position-absolute d-md-none collapsed"

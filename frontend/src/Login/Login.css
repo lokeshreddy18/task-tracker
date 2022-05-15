@@ -30,7 +30,7 @@ button {
 }
 
 .submitBtn {
-  background-color: #005252;
+  background-color: #24527a;
   color: white;
 }
 
@@ -38,5 +38,5 @@ button {
   background-color: white;
   /* #3feee6 */
   color: #005252;
-  border: 1px solid #005252;
+  border: 1px solid #24527a;
 }

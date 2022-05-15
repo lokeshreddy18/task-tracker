@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Redirect, Link } from "react-router-dom";
 import "./Register.css";
-import LogoImage from "../Images/OpTask.png";
 import { toast } from "react-toastify";
 
 const Register = () => {
@@ -58,12 +57,11 @@ const Register = () => {
     return (
       <main className="form-signin text-center">
         <Link to="/">
-          <img src={LogoImage} alt="OpTask Logo" width="200" height="200" />
           <div className="row justify-content-center mb-4">
-            <div>About OpTask</div>
+            <div>About TaskTracker</div>
           </div>
         </Link>
-        <h1 className="h3 mb-3 fw-normal">Sign up for OpTask!</h1>
+        <h1 className="h3 mb-3 fw-normal">Sign up for TaskTracker!</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-floating">
             <input
@@ -152,7 +150,7 @@ const Register = () => {
           </button>
 
           <Link className="signup-link" to="/login">
-            Already have an account? Sign in here!
+            Already have an account? Log in here!
           </Link>
         </form>
       </main>

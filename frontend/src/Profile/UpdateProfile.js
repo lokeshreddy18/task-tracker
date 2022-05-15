@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import "./Profile.css";
 import { toast } from "react-toastify";
 import { Redirect, Link } from "react-router-dom";
-import Loader from "react-loader-spinner";
+
 import IconImage from "../Images/userIcon.png";
 import Footer from "../Footer/Footer.js";
 import PropTypes from "prop-types";
@@ -158,9 +158,6 @@ function UpdateProfile(props) {
           <form onSubmit={handleSubmit} className="profile-container">
             <h1 className="mt-3">Profile:</h1>
             <div className="main-body">
-              {isDataLoading && (
-                <Loader type="Puff" color="#005252" height={500} width={500} />
-              )}
               {!isDataLoading && (
                 <div className="row gutters-sm">
                   <div className="col-md-4 mb-3">

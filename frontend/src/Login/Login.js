@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
-import LogoImage from "../Images/OpTask.png";
 import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 
@@ -38,9 +37,8 @@ const Login = (props) => {
     return (
       <main className="form-signin text-center">
         <Link to="/">
-          <img src={LogoImage} alt="OpTask Logo" width="200" height="200" />
           <div className="row justify-content-center mb-4">
-            <div>About OpTask</div>
+            <div>About TaskTracker</div>
           </div>
         </Link>
         <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
@@ -77,7 +75,7 @@ const Login = (props) => {
           </button>
 
           <Link className="signup-link" to="/register">
-            Don't have an account? Sign up for OpTask!
+            Don't have an account? Sign up for Tasking!
           </Link>
         </form>
       </main>

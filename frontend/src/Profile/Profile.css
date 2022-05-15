@@ -62,12 +62,12 @@
 }
 
 #buttonColor {
-  background-color: #520000;
+  background-color: #a7bcb9;
   border: transparent;
 }
 
 .editBtn {
-  background-color: #005252;
+  background-color: #24527a;
   color: white;
   text-decoration: none;
 }
@@ -75,12 +75,12 @@
 .editBtn:hover {
   background-color: white;
   /* #3feee6 */
-  color: #005252;
-  border: 1px solid #005252;
+  color: #24527a;
+  border: 1px solid #24527a;
 }
 
 .saveBtn {
-  background-color: #005252;
+  background-color: #24527a;
   color: white;
   text-decoration: none;
   border: none;
@@ -88,20 +88,20 @@
 
 .saveBtn:hover {
   background-color: white;
-  border: 1px solid #005252;
-  color: #005252;
+  border: 1px solid #24527a;
+  color: #24527a;
 }
 
 .btnCancel {
   text-decoration: none;
-  background-color: #520000;
+  background-color: #a7bcb9;
   color: white;
 }
 
 .btnCancel:hover {
-  color: #520000;
+  color: #a7bcb9;
   background-color: white;
-  border: 1px solid #520000;
+  border: 1px solid #a7bcb9;
 }
 
 .descriptor-p {

@@ -6,8 +6,8 @@
 .btnUpdate:hover {
     background-color: white;
     /* #3feee6 */
-    color: #005252;
-    border: 1px solid #005252;
+    color: #24527a;
+    border: 1px solid #24527a;
 }
 
 .btnClose {
@@ -25,19 +25,19 @@
     background-color: white;
     /* #3feee6 */
     color: #005252;
-    border-color: #005252;
+    border-color: #24527a;
 }
 
 .btn-outline-primary:hover {
-    background-color: #005252;
+    background-color: #24527a;
     color: white;
     border-color: white;
 }
 
 .btn-check:checked+.btn-outline-primary, .btn-outline-primary:focus{
-    background-color: #005252;
+    background-color: #24527a;
     color: white;
-    border-color: #005252;
+    border-color: #24527a;
 }
 
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, 

@@ -1,6 +1,5 @@
 import "./Landing.css";
 import Footer from "../Footer/Footer.js";
-import LogoImage from "../Images/TinyLogo.png";
 import CheckIcon from "../Images/checklist.png";
 import ComputerWoman from "../Images/computerWoman.png";
 import WorkFlow from "../Images/bookkeeping.png";
@@ -13,13 +12,8 @@ const Landing = () => {
     <div className="pageBody">
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container">
-          <img
-            src={LogoImage}
-            alt="OpTask Logo"
-            style={{ height: "70px", width: "70px" }}
-          />
           <h3 className="navbar-nav linkText" href="/">
-            OpTask
+            TaskTracker
           </h3>
           <button
             className="navbar-toggler button-color"
@@ -30,7 +24,7 @@ const Landing = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {<span className="navbar-toggler-icon"></span> }
           </button>
           <div
             className="collapse navbar-collapse justify-content-end"
@@ -55,7 +49,7 @@ const Landing = () => {
         <div className="container pt-3">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-5">
-              <h1>Welcome to OpTask!</h1>
+              <h1>Welcome to TaskTracker!</h1>
               <p>A space where you can easily manage all your project tasks.</p>
               <Link
                 type="button"
@@ -127,9 +121,9 @@ const Landing = () => {
             </div>
             {/* image from: https://www.vecteezy.com/vector-art/227880-female-developer-vector*/}
             <div className="col-md-5">
-              <h2 className="my-3">What can OpTask do?</h2>
+              <h2 className="my-3">What can TaskTracker do?</h2>
               <p className="my-4">
-                OpTask is reimaging how project management can be done. By
+                TaskTracker is reimaging how project management can be done. By
                 streamlining the process and giving you a place to keep track of
                 all of your projects, you no longer need to go anywhere else to
                 keep track of your work.
